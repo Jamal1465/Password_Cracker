@@ -38,3 +38,13 @@ attack_type_label.grid(column=0,row=0,pady=5,padx=5,sticky="w")
 attack_type_menu=ttk.Combobox(main_frame, textvariable=attack_type_var, state="readonly", font=("Courier New",12))
 attack_type_menu["value"]=("Brute_Force","Dictionary","Reverse_Brute_Force")
 attack_type_menu.grid(column=1,row=0,pady=5,padx=(0,5),sticky="w")
+
+
+file_type_frame= ttk.Frame(main_frame,style="TFrame")
+file_type_label=ttk.Label(file_type_frame, text="Select File Type", font=("Courier New",12))
+file_type_label.grid(column=0,row=0,pady=5,padx=5,sticky="w")
+file_type_var=tk.StringVar(value="zip")
+file_type_menu=ttk.Combobox(file_type_frame,textvariable=file_type_var, state="readonly", font=("Courier New",12))
+file_type_menu["values"]=("zip", "xls","doc","pdf")
+file_type_menu.grid(column=1,row=0,pady=5,padx=(0,5),sticky="w")
+file_type_frame.grid(column=0,row=1,columnspan=3 ,pady=5,padx=5,sticky="ew")
