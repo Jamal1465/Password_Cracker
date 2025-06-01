@@ -114,8 +114,8 @@ output_log = scrolledtext.ScrolledText(output_frame, height=10, wrap=tk.WORD, bg
 output_log.pack(fill=tk.BOTH, expand=True)
 
 ttk.Label(output_frame, text="Result Log:", font=("Courier New", 12)).pack(anchor="w")
-result_log = scrolledtext.ScrolledText(output_frame, height=10, wrap=tk.WORD, bg=background_color, fg=text_color, font=("Courier New", 10))
-result_log.pack(fill=tk.BOTH, expand=True)
+results_log = scrolledtext.ScrolledText(output_frame, height=10, wrap=tk.WORD, bg=background_color, fg=text_color, font=("Courier New", 10))
+results_log.pack(fill=tk.BOTH, expand=True)
 
 progress_bar = ttk.Progressbar(output_frame, orient=tk.HORIZONTAL, length=700, mode="determinate", style="Green.Horizontal.TProgressbar")
 progress_bar.pack(fill=tk.X, pady=5)
