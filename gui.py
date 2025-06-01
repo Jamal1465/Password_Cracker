@@ -63,3 +63,13 @@ charset_entry=ttk.Entry(brute_force_frame, width=40, font=("Courier New",12), ba
 charset_entry.grid(row=4,column=1,pady=5,padx=5,sticky="w")
 
 
+
+dictionary_frame = ttk.Frame(main_frame,style="TFrame")
+ttk.Label(dictionary_frame, text="File Path:", font=("Courier New",12)).grid(column=0,row=2,pady=5,padx=5,sticky="w")
+file_path_entry_dict=ttk.Entry(dictionary_frame,width=40, font=("Courier New",12), background="#151525",foreground="red")
+file_path_entry_dict.grid(row=2,column=1,pady=5,padx=5,sticky="w")
+ttk.Button(dictionary_frame, text="Browse", style="TButton").grid(column=2,row=2,pady=5,padx=5,sticky="w")
+ttk.Label(dictionary_frame, text="Dictionary File", font=("Courier New",12)).grid(column=0,row=3,pady=5,padx=5,sticky="w")
+dictionary_file_entry=ttk.Entry(dictionary_frame, width=40, font=("Courier New",12), background="#151525",foreground="red")
+dictionary_file_entry.grid(row=3,column=1,pady=5,padx=5,sticky="w")
+ttk.Button(dictionary_frame, text="Browse", style="TButton").grid(column=2,row=3,pady=5,padx=5,sticky="w")
