@@ -1,0 +1,9 @@
+msoffcrypto-tool
+pyzipper
+PyPDF2
+colorama
+tqdm
+tabulate
+requests
+Pillow
+tk
