@@ -109,3 +109,11 @@ progress_bar.pack(fill=tk.X, pady=5)
 progress_label=tk.Label(output_frame, text="Progress: 0%", bg="#05050F",fg="#FFD700",font=("Courier New",12))
 progress_label.pack()
 eta_label=tk.Label(output_frame, text="Estimated Time Remaining:N/A", bg="#05050F",fg="#FFD700",font=("Courier New",12))
+
+
+
+root.grid_columnconfigure(0, weight=1)
+main_frame.grid_columnconfigure(0, weight=1)
+main_frame.grid_columnconfigure(1, weight=1)
+main_frame.grid_columnconfigure(2, weight=1)
+output_frame.grid_columnconfigure(0, weight=1)
