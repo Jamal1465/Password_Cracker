@@ -32,3 +32,9 @@ style.configure("TButton", background="black", foreground="red", focusthickness=
 style.configure("Green.Horizontal.TProgressbar",troughcolor="#151525", background="#00FF00",bordercolor="#05050F")
 
 
+attack_type_var=tk.StringVar(value="Brute_Force")
+attack_type_label=ttk.Label(main_frame,text="Select Attack Type", font=("Courier New",12))
+attack_type_label.grid(column=0,row=0,pady=5,padx=5,sticky="w")
+attack_type_menu=ttk.Combobox(main_frame, textvariable=attack_type_var, state="readonly", font=("Courier New",12))
+attack_type_menu["value"]=("Brute_Force","Dictionary","Reverse_Brute_Force")
+attack_type_menu.grid(column=1,row=0,pady=5,padx=(0,5),sticky="w")
