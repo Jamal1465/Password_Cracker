@@ -87,3 +87,8 @@ ttk.Label(reverse_brute_force_frame, text="Common Password File:", font=("Courie
 common_password_file_entry=ttk.Entry(reverse_brute_force_frame, width=40 , font=("Courier New",12),background="#151525",foreground="red")
 common_password_file_entry.grid(row=4,column=1,pady=5,padx=5,sticky="w")
 ttk.Button(reverse_brute_force_frame, text="Browse",style="TButton").grid(row=4,column=2,pady=5,padx=5,sticky="w")
+
+
+ttk.Button(main_frame, text="Run",style="TButton", width=15).grid(row=5, column=0,pady=10,padx=5,sticky="ew")
+ttk.Button(main_frame, text="Stop",style="TButton", width=15).grid(row=5, column=1,pady=10,padx=5,sticky="ew")
+ttk.Button(main_frame, text="Clear",style="TButton", width=15).grid(row=5, column=2,pady=10,padx=5,sticky="ew")
