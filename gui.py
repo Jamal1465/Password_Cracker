@@ -73,3 +73,5 @@ ttk.Label(dictionary_frame, text="Dictionary File", font=("Courier New",12)).gri
 dictionary_file_entry=ttk.Entry(dictionary_frame, width=40, font=("Courier New",12), background="#151525",foreground="red")
 dictionary_file_entry.grid(row=3,column=1,pady=5,padx=5,sticky="w")
 ttk.Button(dictionary_frame, text="Browse", style="TButton").grid(column=2,row=3,pady=5,padx=5,sticky="w")
+
+
