@@ -48,3 +48,18 @@ file_type_menu=ttk.Combobox(file_type_frame,textvariable=file_type_var, state="r
 file_type_menu["values"]=("zip", "xls","doc","pdf")
 file_type_menu.grid(column=1,row=0,pady=5,padx=(0,5),sticky="w")
 file_type_frame.grid(column=0,row=1,columnspan=3 ,pady=5,padx=5,sticky="ew")
+
+
+brute_force_frame=ttk.Frame(main_frame,style="TFrame")
+ttk.Label(brute_force_frame,text="File Path", font=("Courier New",12)).grid(column=0,row=2,pady=5,padx=5,sticky="w")
+file_path_entry=ttk.Entry(brute_force_frame,width=40,font=("Courier New",12), background="#151525",foreground="red")
+file_path_entry.grid(row=2,column=1,pady=5,padx=5,sticky="w")
+ttk.Button(brute_force_frame, text="Browse",style="TButton").grid(column=2,row=2,pady=5,padx=5,sticky="w")
+ttk.Label(brute_force_frame,text="Max Length", font=("Courier New ",12)).grid(row=3,column=0,pady=5,padx=5,sticky="w")
+max_length_entry=ttk.Entry(brute_force_frame,widget=10,font=("Courier New",12), background="#151525",foreground="red")
+max_length_entry.grid(row=3,column=1,pady=5,padx=5,sticky="w")
+ttk.Label(brute_force_frame, text="Charset:", font=("Courier New",12)).grid(row=4,column=0,pady=5,padx=5,sticky="w")
+charset_entry=ttk.Entry(brute_force_frame, width=40, font=("Courier New",12), background="#151525",foreground="red")
+charset_entry.grid(row=4,column=1,pady=5,padx=5,sticky="w")
+
+
